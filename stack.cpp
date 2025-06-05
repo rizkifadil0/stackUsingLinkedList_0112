@@ -53,6 +53,23 @@ class Stack
         cout << "Popped Value: " << top->data << endl;
         top = top->next; // Update the top pointer to the next node
     }
-    
+
     //peek/top operation: retrive the value of the topmost element without removing it
     void peek()
+    {
+        if (isEmpty())
+        {
+            cout << "List is empty." << endl;
+            return; // if the stack is empty, print a messege and return
+        }
+        else
+        {
+            Node *current = top;
+            while (current != NULL)
+            {
+                cout << current->data << " " << endl;
+                current =current->next;
+            }
+            cout << endl;
+        }//return the value of the top node
+    }
