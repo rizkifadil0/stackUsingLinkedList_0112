@@ -44,3 +44,12 @@ class Stack
 
     //pop operation: Remove the topmost element from the stack
     void pop()
+    {
+        if (isEmpty())
+        {
+            cout << "Stack id Empty." << endl;
+            return;//if the stack is empty, print a messegfe and return
+        }
+        cout << "Popped Value: " << top->data << endl;
+        top = top->next; // Update the top pointer to the next node
+    }
