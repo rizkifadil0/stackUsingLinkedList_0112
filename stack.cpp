@@ -10,7 +10,7 @@ class Node
 
         Node()
         {
-            
+            next = NULL;
         }
 };
 
