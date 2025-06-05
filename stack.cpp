@@ -90,28 +90,29 @@ int main()
         cout << "4.Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
-    }
+    
 
-    switch (choice)
-    {
-        case 1:
-            cout << "Enter Value to push: ";
-            cin >> value;
-            stack.push(value);//push the entered value onto the stack
-        
-        case 2:
-            stack.pop(); //pop the topmost element from stack
-            break;
-        case 3:
-            stack.peek();
-            break;
+        switch (choice)
+        {
+            case 1:
+                cout << "Enter Value to push: ";
+                cin >> value;
+                stack.push(value);//push the entered value onto the stack
             
-        case 4:
-            cout << "Exiting program." <<endl;
-            break;
-        default:
-            cout << "Invaliid choice. try again." << endl;
-            break
+            case 2:
+                stack.pop(); //pop the topmost element from stack
+                break;
+            case 3:
+                stack.peek();
+                break;
+                
+            case 4:
+                cout << "Exiting program." <<endl;
+                break;
+            default:
+                cout << "Invaliid choice. try again." << endl;
+                break;
+        }
     }
 }
 
